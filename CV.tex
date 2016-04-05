@@ -1,0 +1,119 @@
+%!TEX program = xelatex
+\documentclass[resmargin, 10pt]{Res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+\usepackage{setspace}
+\usepackage{fontspec}
+\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
+\setmainfont
+  [Ligatures=TeX, % recommended
+   Scale=0.9,
+   UprightFont={* Book},
+   BoldFont={* Black}]
+  {Avenir}
+\newfontfamily{\avh}[UprightFont={* Heavy}]{Avenir}
+
+% \addtolength{\oddsidemargin}{-.4in}
+% \addtolength{\evensidemargin}{-.4in}
+% \addtolength{\topmargin}{-.5in}
+\setlength{\textwidth}{6in} % Text width of the document
+\linespread{0.9}
+\def\side#1{\,\,\, \scriptsize\normalfont{#1} \smallskip}
+\def\entry#1#2#3{
+  \raggedright \small\avh{#1}
+  {\side{#2}}\\
+  \ifx&#3&%
+    {\medskip \smallskip}
+  \else
+    \small\normalfont{#3}
+  \fi
+}
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	NAME AND ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+\begin{resume}
+
+\moveleft\hoffset\vbox{\begin{tabular*}{\resumewidth}{@{\extracolsep{\fill}}l*{10}{r}@{}}
+  \large\bfseries{\addfontfeature{LetterSpace=10.0}SI KAI LEE} & & & & & & & & & \footnotesize 500 Riverside Drive & \footnotesize a\_technicolor\_skye@hotmail.com \\
+  \footnotesize github.com/atechnicolorskye & & & & & & & & & \footnotesize New York, NY 10027 & \footnotesize +1 (217) 721 0397 \\
+\end{tabular*}}
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EDUCATION}
+
+\entry{Columbia University}{Expected to graduate Dec 2016 | New York, NY}{Master of Science in Computer Science. \footnotesize{Machine Learning Track.}} %\hfill GPA 3./4.0}
+
+\entry{University of Southampton}{Graduated in Jul 2014 | Southampton, UK}{Dean's Award for Best Final Year BEng Student}\\{Bachelor of Engineering in Aeronautics and Astronautics. \footnotesize{\hfill GPA 3.94/4.0}}
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt} \smallskip
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{EMPLOYMENT}
+
+\entry{Research Intern | Singapore University of Technology and Design}{Feb 2015 - Aug 2015 | Singapore, SG}{Developed the data pipeline for the statistical natural language processing research of Associate Professor Wei Lu. Worked on cleaning data, experimenting with clustering algorithms, implementing parsers and vectorisers etc.}
+
+\entry{Administrative Assistant | Longrove and Associates}{Nov 2014 - Jan 2015 | Singapore, SG}{Implemented automated time sheet and leave collation using Odoo. Created macros and templates in Word and Excel to standardise administrative procedures.}
+
+\entry{Maintenance Intern | ST Aerospace}{Jul 2013 - Sep 2013 | Singapore, SG}{Identified and documented problems experienced in the Boeing 767 Freighter Conversion Program and recommended appropriate solutions. Communicated with both technicians and Boeing personnel to ensure that the problems and the appropriate solutions were well-understood and implemented correctly. Provided innovative solutions that reduced the cost to various structural and wiring problems.}
+
+\entry{Research Intern | Vestas Technology R\&D}{Mar 2011 - May 2011 | Singapore, SG}{Tasked to find suitable connectors for a new PCB control panel for future wind turbines. Communicated with distributors to obtain samples and provided an in-depth cost-benefit analysis of the different connectors. Demonstrated problem-solving skills by devising different wiring configuration for different connectors and prepared a report on the viability of different connectors for different parts of the panel.}
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+%----------------------------------------------------------------------------------------
+%	PROJECT SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PROJECTS}
+
+\entry{Scalable Detection of Overlapping Communities | Graduate Research, Columbia}{Jan 2016 - Now | New York, NY}{Working on extending the assortative Mixed Membership Stochastic Blockmodel to include attribute information on top of network information. Extended model would be used to detect communities in the Enron email dataset and breast cancer protein network dataset through the use of variational inference.}
+
+\entry{Machine Learning-related Coursework | Columbia}{Jan 2016 - Now | New York, NY}{Implemented Perceptron and AdaBoost with Decision Stumps from scratch in R for Statistical Machine Learning and Principal Component Analysis for patches and whole images and Multilayer Perceptron in Theano for Neural Networks and Deep Learning.}
+
+\entry{Joint Semantic Parsing with Relaxed Hybrid Trees | Research Internship}{Jun 2015 - Aug 2015 | Singapore, SG}{Aided the development of the extension of Associate Professor Wei Lu's discriminative Relaxed Hybrid Trees model. By parsing semantically-similar or equivalent texts jointly with Relaxed Hybrid Trees, the extended model would be better able to disambiguate the semantics of the input sentence using additional information from bilingual and long-range associations to produce more accurate semantic representations.}
+
+\entry{Design of a Stratospheric UAV Flight Simulator | Bachelor's Thesis}{Oct 2013 -  Apr 2014 | Southampton, UK}{Designed and implemented a simulator for unpowered unmanned aerial vehicles (UAVs) gliding from the stratosphere back to a desired location. Used real-time weather data National Oceanic and Atmospheric Administration data for the simulations and demonstrated that such UAVs could replace radiosondes as they would vary likely return to their launch points with altitude to spare.}
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+
+%----------------------------------------------------------------------------------------
+%	COURSEWORK ACTIVITIES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{RELEVANT \\ COURSEWORK}
+\begin{ncolumn}{3}
+Analysis of Algorithms & Computational Learning Theory & Probability and Statistical Inference\\
+Introduction to Databases & Statistical Machine Learning & Neural Networks and Deep Learning\\
+Linear Algebra & Mining of Massive Datasets & Statistical Learning \\
+\end{ncolumn}
+
+\medskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+
+%----------------------------------------------------------------------------------------
+% SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{SKILLS}
+
+Programming Languages: Python, R and Matlab. Limited Java and Prolog. \\
+Database: Postgres, MySQL.\\
+Web Development: Django, Flask, HTML, JQuery.\\
+General: Amazon Web Services, Microsoft Azure, Unix.
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+
+%----------------------------------------------------------------------------------------
+% MISC SECTION
+%----------------------------------------------------------------------------------------
+\section{MISC.}
+Attended Machine Learning Summer School Kyoto 2015\\
+%----------------------------------------------------------------------------------------
+\end{resume}
+\end{document}
