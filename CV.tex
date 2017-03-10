@@ -2,7 +2,7 @@
 \documentclass[resmargin, 10pt]{Res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
 \usepackage{setspace}
 \usepackage{fontspec}
-\usepackage[hmargin=0.5in,vmargin=0.5in]{geometry}
+\usepackage[hmargin=0.5in, vmargin=0.5in]{geometry}
 \setmainfont
   [Ligatures=TeX, % recommended
    Scale=0.9,
@@ -35,8 +35,8 @@
 \begin{resume}
 
 \moveleft\hoffset\vbox{\begin{tabular*}{\resumewidth}{@{\extracolsep{\fill}}l*{10}{r}@{}}
-  \large\bfseries{\addfontfeature{LetterSpace=10.0}SI KAI LEE} & & & & & & & & & \footnotesize 500 Riverside Drive & \footnotesize a\_technicolor\_skye@hotmail.com \\
-  \footnotesize github.com/atechnicolorskye & & & & & & & & & \footnotesize New York, NY 10027 & \footnotesize +1 (217) 721 0397 \\
+  \large\bfseries{\addfontfeature{LetterSpace=10.0}SI KAI LEE} & & & & & & & & & \footnotesize 500 E 63rd St Apt 2A & \footnotesize a\_technicolor\_skye@hotmail.com \\
+  \footnotesize github.com/atechnicolorskye & & & & & & & & & \footnotesize New York, NY 10065 & \footnotesize +1 (217) 721 0397 \\
 \end{tabular*}}
 
 \smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
@@ -46,9 +46,9 @@
 
 \section{EDUCATION}
 
-\entry{Columbia University}{Expected to graduate Dec 2016 | New York, NY}{Master of Science in Computer Science. \footnotesize{Machine Learning Track.}} %\hfill GPA 3./4.0}
+\entry{Columbia University}{Graduated in Dec 2016 | New York, NY}{Master of Science in Computer Science. Machine Learning Track.} \footnotesize{{\hfill GPA 3.65/4.0}}
 
-\entry{University of Southampton}{Graduated in Jul 2014 | Southampton, UK}{Dean's Award for Best Final Year BEng Student}\\{First Class Honours Bachelor of Engineering in Aeronautics and Astronautics. \footnotesize{\hfill GPA 3.94/4.0}}
+\entry{University of Southampton}{Graduated in Jul 2014 | Southampton, UK}{Dean's Award for Best Final Year BEng Student}\\{First Class Honours Bachelor of Engineering in Aeronautics and Astronautics. \footnotesize{\hfill GPA 3.91/4.0}}
 
 \smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt} \smallskip
 
@@ -58,13 +58,15 @@
 
 \section{EMPLOYMENT}
 
-\entry{Research Intern | Singapore University of Technology and Design}{Feb 2015 - Aug 2015 | Singapore, SG}{Developed the data pipeline for the statistical natural language processing research of Associate Professor Wei Lu. Worked on cleaning data, experimenting with clustering algorithms, implementing parsers and vectorisers etc.}
+\entry{Analytics Intern | The Fin Exploration Company}{Jun - Jul 2016 | San Francisco, CA}{Part of the analytics team working on converting user data into actionable insights. Built data pipelines and dashboards on Periscope and local servers and aided in the migration to Amazon Redshift. Applied machine learning algorithms such as Naives Bayes SVM, TF-IDF and Topic Models in conjunction with packages such as Scikit-Learn, SpaCy and Vowpal Wabbit to predict user sentiment and behaviour. Gave a presentation on Natural Language Processing representations and machine learning techniques.}
 
-\entry{Administrative Assistant | Longrove and Associates}{Nov 2014 - Jan 2015 | Singapore, SG}{Implemented automated time sheet and leave collation using Odoo. Created macros and templates in Word and Excel to standardise administrative procedures.}
+\entry{Research Intern | Singapore University of Technology and Design}{Feb - Aug 2015 | Singapore, SG}{Developed the data pipeline for the statistical natural language processing research of Assistant Professor Wei Lu. Worked on cleaning data, experimenting with clustering algorithms, implementing parsers and vectorisers etc.}
 
-\entry{Maintenance Intern | ST Aerospace}{Jul 2013 - Sep 2013 | Singapore, SG}{Identified and documented problems experienced in the Boeing 767 Freighter Conversion Program and recommended appropriate solutions. Communicated with both technicians and Boeing personnel to ensure that the problems and the appropriate solutions were well-understood and implemented correctly. Provided innovative solutions that reduced the cost to various structural and wiring problems.}
+%\entry{Administrative Assistant | Longrove and Associates}{Nov 2014 - Jan 2015 | Singapore, SG}{Implemented automated time sheet and leave collation using Odoo. Created macros and templates in Word and Excel to standardise administrative procedures.}
 
-\entry{Research Intern | Vestas Technology R\&D}{Mar 2011 - May 2011 | Singapore, SG}{Tasked to find suitable connectors for a new PCB control panel for future wind turbines. Communicated with distributors to obtain samples and provided an in-depth cost-benefit analysis of the different connectors. Demonstrated problem-solving skills by devising different wiring configuration for different connectors and prepared a report on the viability of different connectors for different parts of the panel.}
+%\entry{Maintenance Intern | ST Aerospace}{Jul - Sep 2013 | Singapore, SG}{Identified and documented problems experienced in the Boeing 767 Freighter Conversion Program and recommended appropriate solutions. Communicated with both technicians and Boeing personnel to ensure that the problems and the appropriate solutions were well-understood and implemented correctly. Provided innovative solutions that reduced the cost to various structural and wiring problems.}
+
+\entry{Research Intern | Vestas Technology R\&D}{Mar - May 2011 | Singapore, SG}{Tasked to find suitable connectors for a new PCB control panel for future wind turbines. Communicated with distributors to obtain samples and provided an in-depth cost-benefit analysis of the different connectors. Demonstrated problem-solving skills by devising different wiring configuration for different connectors and prepared a report on the viability of different connectors for different parts of the panel.}
 
 \smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
 %----------------------------------------------------------------------------------------
@@ -73,11 +75,13 @@
 
 \section{PROJECTS}
 
-\entry{Scalable Detection of Overlapping Communities | Graduate Research, Columbia}{Jan 2016 - Now | New York, NY}{Working on extending the assortative Mixed Membership Stochastic Blockmodel to include attribute information on top of network information. Extended model would be used to detect communities in the Enron email dataset and breast cancer protein network dataset through the use of variational inference.}
+\entry{Extending Variational Autoencoders | Graduate Research, Columbia}{Sep 2016 - Now | New York, NY}{Exploring the potential of using Variational Autoencoders to learn font manifolds to produce handwriting with John Cunningham. In progress}
 
-\entry{Machine Learning-related Coursework | Columbia}{Jan 2016 - Now | New York, NY}{Implemented Perceptron, AdaBoost with Decision Stumps and Expectation Maximisation with Histogram Clustering in R for Statistical Machine Learning and Principal Component Analysis for patches and whole images, Multilayer Perceptron and Convolutional Neural Nets in Theano for Neural Networks and Deep Learning.}
+\entry{Scalable Detection of Overlapping Communities | Graduate Research, Columbia}{Jan - May 2016 | New York, NY}{Worked on extending the Assortative Mixed Membership Stochastic Blockmodel to include attribute information on top of network information. Extended model to be used to detect communities in the Enron email dataset and breast cancer protein network dataset through the use of variational inference.}
 
-\entry{Joint Semantic Parsing with Relaxed Hybrid Trees | Research Internship}{Jun 2015 - Aug 2015 | Singapore, SG}{Aided the development of the extension of Associate Professor Wei Lu's discriminative Relaxed Hybrid Trees model. By parsing semantically-similar or equivalent texts jointly with Relaxed Hybrid Trees, the extended model would be better able to disambiguate the semantics of the input sentence using additional information from bilingual and long-range associations to produce more accurate semantic representations.}
+\entry{Machine Learning Coursework | Columbia}{Jan - Dec 2016 | New York, NY}{Implemented Perceptron, AdaBoost with Decision Stumps, Expectation Maximisation with Histogram Clustering in R and Principal Component Analysis for patches and whole images for Statistical Machine Learning. Multilayer Perceptron and Convolutional, Recurrent Neural Networks as well as the All-Convolutional Net in Theano for Neural Networks and Deep Learning. Working on showing that no spurious local minima exist in a three- layer neural network for Advanced Machine Learning and hierarchical image segmentation for Foundations of Graphical Models.}
+
+\entry{Joint Semantic Parsing with Relaxed Hybrid Trees | Research Internship}{Jun - Aug 2015 | Singapore, SG}{Aided the development of the extension of Assistant Professor Wei Lu's discriminative Relaxed Hybrid Trees model. By parsing semantically-similar or equivalent texts jointly with Relaxed Hybrid Trees, the extended model would be better able to disambiguate the semantics of the input sentence using additional information from bilingual and long-range associations to produce more accurate semantic representations.}
 
 \entry{Design of a Stratospheric UAV Flight Simulator | Bachelor's Thesis}{Oct 2013 -  Apr 2014 | Southampton, UK}{Designed and implemented a simulator for unpowered unmanned aerial vehicles (UAVs) gliding from the stratosphere back to a desired location. Used real-time weather data National Oceanic and Atmospheric Administration data for the simulations and demonstrated that such UAVs could replace radiosondes as they would vary likely return to their launch points with altitude to spare.}
 
@@ -90,11 +94,22 @@
 \section{RELEVANT \\ COURSEWORK}
 \begin{ncolumn}{3}
 Analysis of Algorithms & Computational Learning Theory & Probability and Statistical Inference\\
-Introduction to Databases & Statistical Machine Learning & Neural Networks and Deep Learning\\
-Linear Algebra & Mining of Massive Datasets & Statistical Learning \\
+Introduction to Databases & Neural Networks and Deep Learning & Statistical Machine Learning \\
+Advanced Machine Learning & Bayesian Models for Machine Learning  & Foundations of Graphical Models \\
 \end{ncolumn}
 
 \medskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+
+%----------------------------------------------------------------------------------------
+% TALKS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{PRESENTATIONS}
+
+Columbia Machine Learning Reading Group - Generative Adversarial Networks.\\
+The Fin Exploration Company - A Primer on Natural Language Processing.
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
 
 %----------------------------------------------------------------------------------------
 % SKILLS SECTION
@@ -102,9 +117,9 @@ Linear Algebra & Mining of Massive Datasets & Statistical Learning \\
 
 \section{SKILLS}
 
-Programming Languages: Python, R and Matlab. Limited Java and Prolog. \\
+Programming Languages: Python, R and Matlab. Some C++, Java and Prolog. \\
 Database: Postgres, MySQL.\\
-Web Development: Django, Flask, HTML, JQuery.\\
+Web Development: Django, Flask.\\
 General: Amazon Web Services, Microsoft Azure, Unix.
 
 \smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
@@ -113,7 +128,27 @@ General: Amazon Web Services, Microsoft Azure, Unix.
 % MISC SECTION
 %----------------------------------------------------------------------------------------
 \section{MISC.}
-Attended Machine Learning Summer School Kyoto 2015\\
+Attended Machine Learning Summer School Kyoto 2015 and Machine Learning Summer School Arequipa 2016.\\
+Part of the Columbia Machine Learning Reading Group and the Columbia Advanced Machine Learning Seminar.
+
+\smallskip\moveleft\hoffset\vbox{\hrule width\resumewidth height 0.05pt}\smallskip
+
 %----------------------------------------------------------------------------------------
+% EXTRACURRICULAR SECTION
+%----------------------------------------------------------------------------------------
+\section{EXTRACURRICULAR ACTIVITIES}
+\entry{Resident Floor Fellow | International House}{Jan - May 2016 | New York, NY}{}
+
+\entry{Israel Innovation Delegation | Columbia School of International and Public Affairs}{Jan 2016 | Israel, IL}{Attended lectures by speakers on the Israel and Palestine startup and innovation scene, the Israeli-Palestine conflict and Israeli politics.}
+
+\entry{Runner-Up | Southampton Start-Up Weekend}{Mar 2014 | Southampton, UK}{Built a web application that tracks and predicts gym usage.}
+
+\entry{Webmaster | Southampton University Mountaineering Club}{2012 - 2014 | Southampton, UK}{}
+
+\entry{Chairman | Kreta Ayer Lions Befrienders Club }{2010-2011 | Singapore, SG}{Led and worked with  volunteers to organise and plan activities for the aged living alone in the Banda 3 zone. Checked on every registered elderly weekly to ensure their well-being.}
+
+\entry{Intelligence Assistant | Singapore Armed Forces }{2009-2010 | Singapore, SG}{Worked within open-source intelligence. Wrote daily and weekly reports on current affairs relevant to Singapore.}
+%----------------------------------------------------------------------------------------
+
 \end{resume}
 \end{document}
